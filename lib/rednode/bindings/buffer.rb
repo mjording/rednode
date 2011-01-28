@@ -130,5 +130,7 @@ module Rednode::Bindings
       end
       
     end
+
+    SlowBuffer = Buffer
   end
 end
