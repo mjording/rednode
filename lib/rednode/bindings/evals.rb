@@ -43,8 +43,11 @@ module Rednode::Bindings
         end
       end
 
-      def self.runInThisContext(source, filename = nil)
-        new(source, filename).runInThisContext
+      def self.runInThisContext
+        lambda do |source, *args|
+          filename, rest = *args
+          new(source, filename).runInThisContext
+        end
       end
 
       def runInThisContext(*args)
