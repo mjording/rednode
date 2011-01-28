@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
 
   s.summary = %q{Pure Ruby implementation of Node.js' native libraries.}
 
-  s.add_dependency "therubyracer", ">= 0.8.0"
+  s.add_dependency "therubyracer", ">= 0.8.1.pre1"
   s.add_dependency "eventmachine"
   s.add_development_dependency "rspec", ">= 2.0.0"
 
