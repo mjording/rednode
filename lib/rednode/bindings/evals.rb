@@ -63,7 +63,7 @@ module Rednode::Bindings
     end
 
     class Context
-      def initialize(properties)
+      def initialize(properties = {})
         @cxt = ::V8::Context.new
         for k,v in properties
           @cxt[k] = v
